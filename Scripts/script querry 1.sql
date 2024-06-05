@@ -21,13 +21,26 @@
 
 -- 4.	How many postings in Tennessee have a star rating above 4?
 
+-- Select Distinct star_rating
+-- from data_analyst_jobs
+-- Where location = 'TN' and star_rating >4
+
+--- 3 above 4 star rating 
+
+
 -- 5.	How many postings in the dataset have a review count between 500 and 1000?
+
+-- Select Count (Distinct review_count)
+-- From data_analyst_jobs
+-- Where review_count between 500 and 1000
+-- 70 postings 
 
 -- 6.	Show the average star rating for companies in each state. The output should show the state as `state` and the average rating for the state as `avg_rating`. Which state shows the highest average rating?
 
 -- 7.	Select unique job titles from the data_analyst_jobs table. How many are there?
 
 -- 8.	How many unique job titles are there for California companies?
+
 
 -- 9.	Find the name of each company and its average star rating for all companies that have more than 5000 reviews across all locations. How many companies are there with more that 5000 reviews across all locations?
 
