@@ -36,11 +36,24 @@
 -- 70 postings 
 
 -- 6.	Show the average star rating for companies in each state. The output should show the state as `state` and the average rating for the state as `avg_rating`. Which state shows the highest average rating?
+-- Select location as state, avg(star_rating)as avg_rating
+-- From data_analyst_jobs
+-- Group by location 
+-- Order by avg_rating
+-- NE 
 
 -- 7.	Select unique job titles from the data_analyst_jobs table. How many are there?
 
--- 8.	How many unique job titles are there for California companies?
+-- Select Count (Distinct title)
+-- From data_analyst_jobs
 
+--881
+
+-- 8.	How many unique job titles are there for California companies?
+-- Select Count (Distinct title)
+-- From data_analyst_jobs
+-- Where location = 'CA'
+-- -230 
 
 -- 9.	Find the name of each company and its average star rating for all companies that have more than 5000 reviews across all locations. How many companies are there with more that 5000 reviews across all locations?
 
