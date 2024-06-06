@@ -56,10 +56,31 @@
 -- -230 
 
 -- 9.	Find the name of each company and its average star rating for all companies that have more than 5000 reviews across all locations. How many companies are there with more that 5000 reviews across all locations?
+--Select company, avg(star_rating)as avg_rating
+--From data_analyst_jobs
+--Where review_count > 5000
+--Group by company
+--Order by avg_rating;
+
+-- Select Count (Distinct company)
+-- From data_analyst_jobs
+-- Where review_count > 5000
+-- -40 companies  
 
 -- 10.	Add the code to order the query in #9 from highest to lowest average star rating. Which company with more than 5000 reviews across all locations in the dataset has the highest star rating? What is that rating?
+-- Select company, avg(star_rating)as avg_rating 
+-- From data_analyst_jobs
+-- Where review_count > 5000
+-- Group by location, company
+-- Order by avg_rating DESC
+
+-- -Kaiser Permanente
 
 -- 11.	Find all the job titles that contain the word ‘Analyst’. How many different job titles are there? 
+
+
+
+
 
 -- 12.	How many different job titles do not contain either the word ‘Analyst’ or the word ‘Analytics’? What word do these positions have in common?
 
