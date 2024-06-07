@@ -77,12 +77,25 @@
 -- -Kaiser Permanente
 
 -- 11.	Find all the job titles that contain the word ‘Analyst’. How many different job titles are there? 
+-- Select count (Distinct title)
+-- From data_analyst_jobs
+-- Where title like '%Analyst%'
 
+-- 754
 
 
 
 
 -- 12.	How many different job titles do not contain either the word ‘Analyst’ or the word ‘Analytics’? What word do these positions have in common?
+-- Select *  
+-- From data_analyst_jobs
+-- Where title not like '%Analyst%' 
+-- 	and title not like '%Analytics%'
+-- 	and title not like '%analyst%' 
+-- 	and title not like '%analytics%'
+-- 	and title not like '%ANALYST%'
+-- 	and title not like '%ANALYTICS%'
+-- -4 they all require SQL and tableau skills 
 
 -- **BONUS:**
 -- You want to understand which jobs requiring SQL are hard to fill. Find the number of jobs by industry (domain) that require SQL and have been posted longer than 3 weeks. 
