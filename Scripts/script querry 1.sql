@@ -68,13 +68,14 @@
 -- -40 companies  
 
 -- 10.	Add the code to order the query in #9 from highest to lowest average star rating. Which company with more than 5000 reviews across all locations in the dataset has the highest star rating? What is that rating?
--- Select company, avg(star_rating)as avg_rating 
--- From data_analyst_jobs
--- Where review_count > 5000
--- Group by location, company
--- Order by avg_rating DESC
+ -- Select company, avg(star_rating)as avg_rating 
+ -- From data_analyst_jobs
+ -- Where review_count > 5000
+	--  and company is not null
+ -- Group by company
+ -- Order by avg_rating DESC
 
--- -Kaiser Permanente
+--Unilever
 
 -- 11.	Find all the job titles that contain the word ‘Analyst’. How many different job titles are there? 
 -- Select count (Distinct title)
@@ -95,7 +96,7 @@
 -- 	and title not like '%analytics%'
 -- 	and title not like '%ANALYST%'
 -- 	and title not like '%ANALYTICS%'
--- -4 they all require SQL and tableau skills 
+-- -4 they all require tableau skills 
 
 -- **BONUS:**
 -- You want to understand which jobs requiring SQL are hard to fill. Find the number of jobs by industry (domain) that require SQL and have been posted longer than 3 weeks. 
